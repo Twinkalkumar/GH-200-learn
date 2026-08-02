@@ -6,8 +6,12 @@ on:
 jobs:
     hello:
         runs-on: ubuntu-latest
+        env:
+            key: gh200
         steps:
             - name: initialize...
               run: echo "Initializing pipeline successfull..."
             - name: Hello
               run: echo "Hello GH-200"
+            - name: secret value
+              run: echo "Secret value is $key"
