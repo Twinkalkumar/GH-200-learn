@@ -1,0 +1,9 @@
+name: myworkflow
+
+on:
+  push:
+
+jobs:
+    hello:
+    - name: hello world
+      run: echo "Hello world..."
