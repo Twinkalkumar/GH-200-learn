@@ -13,6 +13,7 @@ jobs:
               run: echo "Hello GH-200"
     Hi:
         runs-on: windows-latest
+        needs: hello
         steps:
             - name: Hi
               run: echo "Hi Twinkal"
