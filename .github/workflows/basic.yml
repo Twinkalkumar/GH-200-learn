@@ -1,0 +1,13 @@
+name: first-workflow
+
+on:
+    push:
+
+jobs:
+    hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: initialize...
+              run: echo "Initializing pipeline successfull..."
+            - name: Hello
+              run: echo "Hello GH-200"
