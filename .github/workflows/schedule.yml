@@ -2,10 +2,10 @@ name: schedule_pipeline
 
 on:
     schedule:
-        - cron: '*/5 * * * *'
+        - cron: '*/2 * * * *'
 
 jobs:
-    Hello-Twinkal:
+    Hello_Twinkal:
         runs-on: ubuntu-latest
         steps:
             - name: Echo current time
