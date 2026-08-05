@@ -5,7 +5,7 @@ on:
 
 jobs:
     hello-world:
-        if: github.repository == 'octocat/Hello-World'
+        if: github.repository == 'Twinkalkumar/GH-200-learn'
         runs-on: ubuntu-latest
         steps:
             - name: "Hello World"
