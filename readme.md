@@ -3,6 +3,7 @@
 ## GitHub CLI
 
 ```sh
+gh auth refresh -s workflow
 gh workflow run manual_trigger.yml -f message=Hello -f use-emoji=true
 ```
 
