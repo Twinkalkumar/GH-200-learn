@@ -11,5 +11,6 @@ jobs:
         steps:
             - name: Checkout repo
               uses: actions/checkout@v2
-            - name: Run a script
-              run: echo "Event of type: $GITHUB_EVENT_NAME"
+            - name: Echo event type
+              run: |
+                echo "Event of type: $GITHUB_EVENT_NAME"
