@@ -1,0 +1,15 @@
+name: webhook-pipeline
+
+on:
+    repository_dispatch:
+        types:
+            - webhook
+
+jobs:
+    respond-to-dispatch:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repo
+              run: actions/checkout@v2
+            - name: Run a script
+              run: echo "Event of type: $GITHUB_EVENT_NAME"
