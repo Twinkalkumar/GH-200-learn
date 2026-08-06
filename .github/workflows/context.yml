@@ -1,4 +1,4 @@
-name: context-examples
+name: context-example
 
 on:
     push:
