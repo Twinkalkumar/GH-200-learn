@@ -1,0 +1,13 @@
+name: self-hosted-runner-pipeline
+
+on:
+    push
+
+jobs:
+    self-hosted-runner-job:
+        runs-on: self-hosted
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+            - name: Hello world
+              run: echo "This is a self-hosted runner pipeline"
